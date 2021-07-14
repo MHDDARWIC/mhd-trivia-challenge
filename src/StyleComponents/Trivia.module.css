@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body{
+  background-color: #211242;
+  background-image: url('../assets/test.gif');
+}
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.4fr 1.6fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "header"
+    "main";
+}
+
+.header { grid-area: header; justify-self: center; }
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.3fr 1.7fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "info"
+    "question";
+  grid-area: main;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "category . score";
+  grid-area: info;
+}
+
+.category { grid-area: category; }
+
+.score { grid-area: score; }
+
+.question {
+  display: grid;
+  grid-template-columns: 0.3fr 2.4fr 0.3fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". actual .";
+  grid-area: question;
+}
+
+.actual { grid-area: actual; justify-self: center; }
+
+
+  .textStyle{
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .logoImg{
+    height: 200px;
+    margin-top: 20px;
+  }

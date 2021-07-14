@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 2.4fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "header"
+      "main";
+  }
+  
+  .header {
+    grid-area: header;
+    justify-self: center;
+  }
+  
+  .main {
+    display: grid;
+    grid-template-columns: 0.4fr 2.2fr 0.4fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". form .";
+    grid-area: main;
+  }
+  
+  .form {
+    justify-self: center;
+    grid-area: form;
+    align-self: center;
+    border:1px white solid;
+    border-radius: 20px;
+    width: fit-content;
+    height: fit-content;
+ }
+
+ .inputFields{
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     height: 50px;
+     width: 300px;
+     margin-top: 10px;
+     margin-bottom: 10px;
+     margin-right: 40px;
+     margin-left: 40px;
+     border-radius: 20px;
+     border:none;
+     font-family: 'Press Start 2P', cursive;
+     color: grey;
+ }
+
+ .labelStyle{
+   display: block;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+ }
+
+ .logoImg{
+   height: 200px;
+   margin-top: 20px;
+ }
+
+ .buttonStyle{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   height: fit-content;
+   width: fit-content;
+   color: white;
+   background-color: rgba(0, 255, 106, 0.788);
+   border-radius: 20px;
+   border:none;
+   font-size: 20px;
+   font-family: 'Press Start 2P', cursive;
+   margin-bottom: 20px;
+   padding: 10px;
+   margin-top: 20px;
+ }
+
+ .buttonStyle:hover{
+
+   cursor: pointer;
+   font-size: 25px;
+   transition: 0.1s;
+ }
+
+ .errorStyle{
+  font-family:'Press Start 2P', cursive;
+  color: white;
+  font-size: 10px;
+  text-align: center;
+  word-wrap: break-word;
+  color: red;
+  
+
+}
+
+
+ 
+
+
+  
